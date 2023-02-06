@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(192, 192, 192);
+    font-size: 25px;
+    -webkit-text-stroke: 0px black;
+}
+
+body{
+    background-image: url("./assets/bag-coffee-beans-shoulder-cup.jpg");
+    background-color: #cccccc;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+/* tittle */
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+h3{
+    margin: 1em;
+}
+/*  input space */
+div{
+    margin-left: 1em;
+    font-weight: bold;
+}
+input{
+    margin: 1em;
+    background-color: rgba(212, 212, 212, 0.863);
+    color: black;
+}
+
+/* remove arrows to input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/*  botoes */
+.btn{
+    background-color: rgba(153, 183, 209, 0.349);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #dbdfdc;
+}
+
+.btn:hover{
+    background-color: rgb(117, 104, 86);
+}
+
+.btn:active {
+    background-color: #b7b9b7;
+    box-shadow: 0 5px rgb(44, 44, 44);
+    transform: translateY(4px);
+  }
+
+  #submit{
+    margin-top: 10em;
+    margin-left: 5em;
+  }
+
+  @media (min-width: 1600px) {
+    body{
+    background-size:100%;
+}
+  }
+
+  @media (max-width: 600px) {
+    body{
+    font-size: 14px;
+}
+    div{
+        font-size: 20px;
+    }
+  }

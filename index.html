@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>ORGANIZAÇÃO DO CAFÉ EMPRESARIAL</h1>
+    <h3>Por favor preencha os dados abaixo para cadastro:</h3>
+    <form>
+        <div class="name">
+            Nome: <input type="text" name="name" id="pessoa"> 
+        </div>
+        <div class="cpf">
+            CPF: <input type="number" name="cpf" id="cpf" onchange=" ValidaCPF()" maxlength = "11"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </div>
+        <div class="ref">
+            Refeição: <input type="text" name="food" id="refPessoa">
+            <input type="button" value=" Incluir Outra " class="btn" href="#">
+        </div>
+        <input type="submit" value="Enviar" class="btn" id="submit"  href="#" onclick="inserirDados()">
+    </form>
+    
+</body>
+<script src="./main.js"></script>
+</html>
